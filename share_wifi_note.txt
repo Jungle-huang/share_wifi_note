@@ -1,0 +1,18 @@
+netsh wlan set hostednetwork mode=allow ssid=test key=12345678
+
+#open
+netsh wlan start hostednetwork
+
+#close
+netsh wlan stop hostednetwork
+
+
+#--------
+#setting status
+netsh wlan show hostednetwork
+
+#search password
+netsh wlan show hostednetwork setting=security
+
+
+`
